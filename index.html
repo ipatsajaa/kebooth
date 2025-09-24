@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kepotbooth Strip Mini</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h2>📸 Kepotbooth - Strip Mini 📸</h2>
+
+  <div class="wrapper">
+    <video id="video" autoplay playsinline muted></video>
+    <div id="countdown">3</div>
+  </div>
+
+  <div>
+    <button id="captureBtn" class="btn">📷 Ambil Foto</button>
+    <button id="resetBtn" class="btn">🔄 Reset</button>
+    <button id="downloadBtn" class="btn" disabled>💾 Simpan ke Gallery</button>
+  </div>
+
+  <div class="frame-options">
+    <label>Pilih Frame: </label>
+    <select id="frameSelect">
+      <option value="default">Biru Polos</option>
+      <option value="colorful">Warna-warni</option>
+      <option value="cute">Imut</option>
+    </select>
+  </div>
+
+  <canvas id="frameCanvas" width="300" height="900"></canvas>
+
+  <div class="gallery">
+    <h3>📂 Gallery</h3>
+    <div id="galleryContainer"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
